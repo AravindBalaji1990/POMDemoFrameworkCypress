@@ -6,5 +6,6 @@ module.exports = defineConfig({
       // implement node event listeners here
     },
   },
+  // url of the application
   baseurl: "https://bstackdemo.com/",
 });

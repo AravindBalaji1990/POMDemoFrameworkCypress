@@ -2,7 +2,8 @@
 
 class signin{
     elements = {
-        usernametxt :() =>cy.get("#username")
+        usernametxt :() =>cy.get("#username"),
+        passwordtxt :() =>cy.get("#password")
             }
 
 

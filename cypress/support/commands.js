@@ -23,3 +23,13 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+Cypress.Commands.add('login', (email, password) => { 
+    // cy.get("#username").should('be.visible').clear()
+    cy.get(".css-tlfecz-indicatorContainer").first().click()
+    cy.get("#react-select-2-input").type(email)
+    cy.get("#react-select-2-input").type('{downarrow}')
+
+    cy.get("#password").should('be.visible')
+    cy.get("#react-select-3-input").type(password)
+
+})

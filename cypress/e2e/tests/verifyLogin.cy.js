@@ -6,6 +6,8 @@ describe('Handling autocomplete', function() {
     it('Should login to inventory page',()=>{
         cy.visit('https://bstackdemo.com/')
         homePage.clickOnSignin();
+
         signin.verifyUsernameTextbox();
+        cy.login("fav_user","testingisfun99")
     })
 })
